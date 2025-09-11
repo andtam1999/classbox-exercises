@@ -9,6 +9,6 @@ public class DigitCount {
 		int num = scan.nextInt();
 		scan.close();
 		
-		System.out.println(Integer.toString(num).length() + " digits");
+		System.out.println(Integer.toString(Math.abs(num)).length() + " digits");
 	}
 }
