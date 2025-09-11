@@ -5,8 +5,10 @@ public class SecondLargest {
 		if (nums.length < 2) {
 			return nums[0];
 		}
-		int largest = nums[0];
-		int secondLargest = nums[0];
+		
+		int largest = Integer.MIN_VALUE;
+		int secondLargest = Integer.MIN_VALUE;
+		
 		for (int i = 1; i < nums.length; i++) {
 			if (nums[i] > largest) {
 				secondLargest = largest;
