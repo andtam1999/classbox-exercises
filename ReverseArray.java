@@ -2,6 +2,8 @@ package day2;
 
 public class ReverseArray {
 	public static int[] reverse(int nums[]) {
+		if (nums.length == 0) return nums;
+				
 		int[] returnArr = new int[nums.length];
 		int head = 0;
 		int tail = nums.length - 1;
